@@ -58,17 +58,19 @@
 			sendFoto($chatId,"foto.png",false,"la mia foto", $api);
 		}
 		if($text=="barz"){
-			$barz[0]='Un cavallo va dal benzinaioe chiede:"il fieno peravore';
-			$barz[1]='Qual è la differenza tra il sushi e un ebreo? Che il sushi è crudo';
-			$barz[2]='E Dio disse: "pagherai con il sangue" e la donna rispose: "posso pagare a rate?"e fu così inventato il ciclo!'; 
+			$barz[0]="Un cavallo va dal benzinaioe chiede:'il fieno peravore'";
+			$barz[1]="Qual è la differenza tra il sushi e un ebreo? Che il sushi è crudo";
+			$barz[2]="E Dio disse: 'pagherai con il sangue' e la donna rispose: 'posso pagare a rate?'e fu così inventato il ciclo!"; 
 		
 			
-			$i = (0;3);
+			$i = (0,3);
 			$parameters = array('chat_id' => $chatId, "text" => $barz[$i]);
+			//$parameters = array('chat_id' => $chatId, "text" => $barz[$i]);
 		}
 
-		if($text=="audio"){
+		/*if($text=="audio"){
 			sendAudio($chatId,"audio.mp3",false
+				  }*/
 		/*if($text ="foto"){
 			//sendFoto($ChatId, "foto.png", false, "La mia Foto", $api);
 		}*/
