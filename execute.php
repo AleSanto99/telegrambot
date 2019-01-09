@@ -51,9 +51,24 @@
 			$parameters = array('chat_id' => $chatId, "text" => $text);
 		}
 		if($text == "foto"){
+			$foto[0]="foto.png";
+			$foto[1]="foto1.png";
+			$foto[2]="foto2.png";
+			$num = rand(0,2);
 			sendFoto($chatId,"foto.png",false,"la mia foto", $api);
 		}
-	
+		if($text=="barz"){
+			$barz[0]='Un cavallo va dal benzinaioe chiede:"il fieno peravore';
+			$barz[1]='Qual è la differenza tra il sushi e un ebreo? Che il sushi è crudo';
+			$barz[2]='E Dio disse: "pagherai con il sangue" e la donna rispose: "posso pagare a rate?"e fu così inventato il ciclo!'; 
+		
+			
+			$i = (0;3);
+			$parameters = array('chat_id' => $chatId, "text" => $barz[$i]);
+		}
+
+		if($text=="audio"){
+			sendAudio($chatId,"audio.mp3",false
 		/*if($text ="foto"){
 			//sendFoto($ChatId, "foto.png", false, "La mia Foto", $api);
 		}*/
